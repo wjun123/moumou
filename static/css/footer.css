@@ -1,0 +1,94 @@
+/*底部*/
+.f_one{
+	width:1270px;
+	height:150px;
+	margin:50px 0 50px 390px;
+}
+.f_one ul:first-child{
+	font-size:14px;
+	font-weight:700;
+	color:#999;
+	width:158px;
+	height:123px;
+	border-right:1px dashed #999;
+}
+.f_one ul{
+	float:left;
+	margin-right:90px;
+}
+.f_one ul:first-child li:nth-child(2){
+	color:#00B08C;
+}
+.f_one ul li:first-child{
+	font-size:14px;
+	color:#999;
+	font-weight:700;
+}
+.f_one ul li:not(:first-child){
+	margin-top:10px;
+}
+.f_one ul li a{
+	color:#999;
+	font-size:12px;
+}
+.f_one ul li a:hover{
+	color:rgb(34, 15, 15);
+}
+/*最底部*/
+.f_two{
+	width:1903px;
+	height:170px;
+	background:#333;
+	color:#999;
+	padding-top:20px;
+}
+.f_two>p{
+	font-size:14px;
+	margin-top:10px;
+	width:100px;
+	margin-left:900px;
+}
+.f_two>p:not(:first-child){
+	width:700px;
+	margin-top:10px;
+	margin-left:600px;
+}
+.f_two>p:last-child{
+	width:600px;
+	margin-left:680px;
+}
+
+.f_two>ul>li{
+	float:left;
+}
+.f_two>ul{
+	margin-left:340px;
+	margin-top:10px;
+	width:1350px;
+}
+.f_two>ul>li>a{
+	color:#999;
+	margin-left:20px;
+	font-size:12px;
+	border-right:1px solid #999;
+	padding-right:20px;
+}
+.f_two>ul>li>a:hover{
+	color:#ddd;
+}
+.f_two>ul:nth-child(2):after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.f_two>ul:nth-child(3){
+	margin-left:360px;
+}
+.f_two>ul:nth-child(3):after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+
+

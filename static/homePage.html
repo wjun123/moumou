@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/homePage.css">
+	<script src="js/vue.js"></script>
+	<script src="js/ajax.js"></script>
+</head>
+<body>
+  <header id="header-to"></header>
+  <div id="auto">
+	<!--轮播图-->
+	<section>
+		<div class="container">
+			<div class="wrap" style="left: -1903px;" id="list">
+				<!--<img src="img/sy/3.jpg" >
+				<img src="img/sy/2.jpg">
+				<img src="img/sy/1.jpg">
+				<img src="img/sy/4.jpg">-->
+			</div>
+			<div class="buttons"> 
+				<span class="on"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<a href="javascript:void (0);" rel="external nofollow" class="arrow arrow_left"><</a>
+           <a href="javascript:void (0);" rel="external nofollow" class="arrow arrow_right">></a>
+		</div>
+		<!--热卖品-->
+		<div id="rem">
+			<div class="rem-t">
+				<h1>热卖推荐</h1>
+				<span>Hot Sale</span>
+			</div>
+			<!--热卖四图上-->
+			<div class="rem-for" id="rm">
+			<!--<div>
+					 <a href="#"><img src="img01/18.png" alt=""></a>
+					 <p>全实木地柜</p>
+					 <span>￥3760</span>
+				</div>
+				<div>
+					<a href="#"><img src="img01/19.png" alt=""></a>
+					<p>头靠可调节北方情沙发</p>
+					<span>￥3780</span>
+				</div>
+				<div>
+					<a href="#"><img src="img01/21.png" alt=""></a>
+					<p>可拆洗带扶手茶盘沙发</p>
+					<span>￥3890</span>
+				</div>	
+				<div>	
+					<a href="#"><img src="img01/20.png" alt=""></a>
+					<p>清新米黄布皮沙发</p>
+					<span>￥3670</span>
+				</div>-->
+			</div>
+			<!--热卖四图小圆点-->
+			<div class="rem-xyd">
+				<img class="rem-c1" src="img01/22.png">
+				<span></span>
+				<span></span>
+				<span></span>
+				<img src="img01/23.png">
+			</div>
+			<!--Buy家清单-->
+			<div class="jqd-ti">
+				<h1>Buy 家清单</h1>
+				<span>Shopping List</span>
+				<span>更多清单&gt;</span>
+			</div>
+			<div id="jqd">
+				<div class="jqd-1">
+					<div  v-for="tmp in res">
+						<a href="#">
+							<img :src="tmp.img_url1">
+							<p>这张儿童床，三娃都能睡得下！</p>
+							<p>{{tmp.title}}</p>
+							<div>
+								<img :src="tmp.img_url2">
+								<img :src="tmp.img_url3">
+								<img :src="tmp.img_url4">
+								<span>
+									<b>1+</b>
+									<b>单品</b>
+								</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			<!--Buy控制按钮-->
+			</div>
+				<div class="rem-xyd">
+				<img class="rem-c1" src="img01/22.png">
+				<span></span>
+				<span></span>
+				<span></span>
+				<img src="img01/23.png">
+			</div>
+			<!--家装指南-->
+			<div class="jzzn">
+				<div class="jzzn_d">
+					<h1>家装指南</h1>
+					<span>Home Decoration</span>
+					<span>更多&gt;</span>
+				</div>
+				<div class="jzzn_t">
+					<div class="conta">
+						<div class="before">
+							<a href="#">
+								<img src="img01/j_01.jpg">
+								<p>你以为low爆的编藤家具，已经美出天际了！</p>
+								<b></b>
+								<span class="aa">6190</span>
+								<b></b>
+								<span>27</span>
+							</a>
+						</div>
+						<div class="after">好</div>
+					</div>
+					<div class="conta">
+						<div class="before">
+							 <a href="#">
+									<img src="img01/j_02.jpg">
+									<p>软装搭配速成法则，让家美成画！</p>
+									<b></b>
+									<span>3586</span>
+									<b></b>
+									<span>18</span>
+							 </a>
+						 </div>
+						 <div class="after">天</div>
+					</div>
+					<div class="conta">
+							<div class="before">
+								<a href="#">
+									<img src="img01/j_03.png">
+									<p>想要打造一个高级黑的家?不，是格调的家</p>
+									<b></b>
+									<span>3603</span>
+									<b></b>
+									<span>18</span>
+								</a>
+							</div>
+						 <div class="after">加</div>	
+				 	</div>
+				 </div>
+			</div>
+			<!--壹时半刻-->
+			<div class="jzzn ysbk_w">
+				<div class="jzzn_d">
+					<h1>壹时半刻</h1>
+					<span>List Style & Story</span>
+					<span>更多&gt;</span>
+				</div>
+				<div class="ysbk">
+					<div>
+						<img src="img01/y_05.png">
+						<img src="">
+						<img src="">
+						<img src="">
+						<img src="">
+						<img src="">
+						
+					</div>
+					<div class="ysbk_s">
+						<span>1</span>
+						<span>2</span>
+						<span>3</span>
+						<span>4</span>
+						<span>5</span>
+						<span>6</span>
+					</div>
+				</div>
+			</div>
+			<!--大家都在说-->
+			<div class="djdzs">
+				<div>
+					<h1>大家都在说</h1>
+					<span>mai mai mai</span>
+				</div>
+				<div class="djdzs_s">
+					<div>
+						<img src="img01/d_01.png">
+						<span><img src="img01/e_01.jpg"> 吃***子</span>
+						<p>沙发很棒！质量不错！布料也挺舒服的，下面的储物区很实用。自带的抱枕很不错，都是原木色的黄色搭配，很适合我这样的小户型，挺满意的。</p>
+					</div>
+					<div>
+						<img src="img01/d_02.png">
+						<span><img src="img01/e_02.jpg">有***的</span>
+						<p>挺划算。沙发软硬适中，坐着挺舒服，而且可以拆洗，可以放倒当床，有客人的时候可以多一个临时床位。送的抱枕手感也不错，颜色和沙发也匹配，最喜欢实木的脚，抬高了好打理，扫地机器人可以顺利通过！</p>
+					</div>
+					<div>
+						<img src="img01/d_03.png">
+						<span><img src="img01/e_03.jpg">努***力</span>
+						<p>挺好的，跟图片一致，没什么色差。在这里买了上万的家具，性价比还是很高的，最近的新品都是偏北欧风，很是符合年轻人的审美。</p>
+					</div>
+				</div>
+			</div>
+	</section>
+	<footer id="footer-to"></footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/homePage.js"></script>
+	<script src="js/imagelist.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+</body>
+</html>
