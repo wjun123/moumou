@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({
 	extended:false
 }));
 //1111
+//222
 //挂载到user下
 app.use('/user',user);
 app.use('/homePage',homePage);
